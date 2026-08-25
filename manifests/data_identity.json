@@ -1,0 +1,33 @@
+{
+  "files": {
+    "all_assets.jsonl": {
+      "bytes": 7977764,
+      "rows": 7280,
+      "sha256": "5eeee8bc914c142961c86bc5cfb8b489a4a6f13bdb7b5850f06d610e3845cd2e"
+    },
+    "baseline_teacher_logits.jsonl": {
+      "bytes": 523077,
+      "rows": 6160,
+      "sha256": "fd61b2ac10a20c905d925032900bf54a743abf05e93bdced6259212ba145139e"
+    },
+    "holdout.jsonl": {
+      "bytes": 807685,
+      "rows": 1120,
+      "sha256": "ba0cd97dbc9c17395bd0d471db17dcf1ec83428eb9ad5ae9b8555f703233f7ec"
+    },
+    "teacher_train.jsonl": {
+      "bytes": 6512756,
+      "rows": 5600,
+      "sha256": "c55e911cb8dcd4aede4e3ab93cf111228624987ff385e295fced7c66cf4eb235"
+    },
+    "teacher_validation.jsonl": {
+      "bytes": 657323,
+      "rows": 560,
+      "sha256": "11bd4223ddf6cbccd9416678aa9ae1522228e7236c40b0cb705bff2834066ed0"
+    }
+  },
+  "holdout_policy": "asset identities frozen; outcomes unavailable until validation screen passes",
+  "holdout_unique_assets": 1601,
+  "schema_version": "judo-graft-cached-inputs-v1",
+  "train_validation_unique_assets": 8070
+}

@@ -1,0 +1,598 @@
+{
+  "caver": {
+    "epochs": 2,
+    "non_ad_safety_events": 258,
+    "non_ad_safety_frequency": 4,
+    "optimizer_steps": 1030,
+    "pair_occurrences_by_source": {
+      "GoodsAD": 121,
+      "MVTec-AD": 137,
+      "MVTec-LOCO": 134,
+      "VisA": 123
+    },
+    "safety_events_by_source": {
+      "GoodsAD": 73,
+      "MVTec-AD": 64,
+      "MVTec-LOCO": 60,
+      "VisA": 61
+    },
+    "same_anchor_pair_occurrences_per_epoch": 515,
+    "seed": 20260825,
+    "synthetic_normal_null_rows_per_epoch": 515,
+    "unique_non_ad_safety_sample_ids": 258,
+    "unique_pair_anomaly_sample_ids": 492,
+    "unique_pair_normal_sample_ids": 308,
+    "unique_pair_raw_sample_ids": 800,
+    "unique_raw_training_sample_ids_touched": 1058
+  },
+  "dataset": {
+    "mmad_json_sha256": "639343b491bc67b2abb3c5d719f221ce27f83b2ed97948f4e88055aaa31f1c1e",
+    "repo_id": "jiang-cc/MMAD",
+    "revision": "c4ed190dcb530f2f673ab293e575ad32054bb3cf"
+  },
+  "generated_on": "2026-08-26",
+  "manifest_identity": {
+    "holdout.jsonl": {
+      "included_in_bundle": false,
+      "role": "locked holdout; not training",
+      "rows": 1120,
+      "sha256": "ba0cd97dbc9c17395bd0d471db17dcf1ec83428eb9ad5ae9b8555f703233f7ec"
+    },
+    "teacher_train.jsonl": {
+      "included_in_bundle": true,
+      "role": "training",
+      "rows": 5600,
+      "sha256": "c55e911cb8dcd4aede4e3ab93cf111228624987ff385e295fced7c66cf4eb235"
+    },
+    "teacher_validation.jsonl": {
+      "included_in_bundle": true,
+      "role": "validation",
+      "rows": 560,
+      "sha256": "11bd4223ddf6cbccd9416678aa9ae1522228e7236c40b0cb705bff2834066ed0"
+    }
+  },
+  "schema_version": "freb-caver-mmad-training-inventory-v1",
+  "scope": "FREB GRAFT/CAVER training and validation MMAD manifests; holdout rows excluded",
+  "train": {
+    "assets": {
+      "unique_query_images": 4044,
+      "unique_query_or_reference_images": 7345,
+      "unique_reference_images": 3301
+    },
+    "duplicate_sample_id_rows": 0,
+    "label": [
+      {
+        "label": "anomaly",
+        "rows": 3692,
+        "share": 0.6592857142857143
+      },
+      {
+        "label": "normal",
+        "rows": 1908,
+        "share": 0.3407142857142857
+      }
+    ],
+    "question_type": [
+      {
+        "question_type": "Anomaly Detection",
+        "rows": 800,
+        "share": 0.14285714285714285
+      },
+      {
+        "question_type": "Defect Analysis",
+        "rows": 800,
+        "share": 0.14285714285714285
+      },
+      {
+        "question_type": "Defect Classification",
+        "rows": 800,
+        "share": 0.14285714285714285
+      },
+      {
+        "question_type": "Defect Description",
+        "rows": 800,
+        "share": 0.14285714285714285
+      },
+      {
+        "question_type": "Defect Localization",
+        "rows": 800,
+        "share": 0.14285714285714285
+      },
+      {
+        "question_type": "Object Analysis",
+        "rows": 800,
+        "share": 0.14285714285714285
+      },
+      {
+        "question_type": "Object Classification",
+        "rows": 800,
+        "share": 0.14285714285714285
+      }
+    ],
+    "rows": 5600,
+    "source": [
+      {
+        "rows": 1400,
+        "share": 0.25,
+        "source": "GoodsAD"
+      },
+      {
+        "rows": 1400,
+        "share": 0.25,
+        "source": "MVTec-AD"
+      },
+      {
+        "rows": 1400,
+        "share": 0.25,
+        "source": "MVTec-LOCO"
+      },
+      {
+        "rows": 1400,
+        "share": 0.25,
+        "source": "VisA"
+      }
+    ],
+    "source_category": [
+      {
+        "category": "cigarette_box",
+        "rows": 232,
+        "source": "GoodsAD"
+      },
+      {
+        "category": "drink_bottle",
+        "rows": 342,
+        "source": "GoodsAD"
+      },
+      {
+        "category": "drink_can",
+        "rows": 134,
+        "source": "GoodsAD"
+      },
+      {
+        "category": "food_bottle",
+        "rows": 266,
+        "source": "GoodsAD"
+      },
+      {
+        "category": "food_box",
+        "rows": 194,
+        "source": "GoodsAD"
+      },
+      {
+        "category": "food_package",
+        "rows": 232,
+        "source": "GoodsAD"
+      },
+      {
+        "category": "bottle",
+        "rows": 62,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "cable",
+        "rows": 134,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "capsule",
+        "rows": 117,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "carpet",
+        "rows": 98,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "grid",
+        "rows": 72,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "hazelnut",
+        "rows": 91,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "leather",
+        "rows": 93,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "metal_nut",
+        "rows": 71,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "pill",
+        "rows": 133,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "screw",
+        "rows": 107,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "tile",
+        "rows": 96,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "toothbrush",
+        "rows": 38,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "transistor",
+        "rows": 93,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "wood",
+        "rows": 59,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "zipper",
+        "rows": 136,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "breakfast_box",
+        "rows": 244,
+        "source": "MVTec-LOCO"
+      },
+      {
+        "category": "juice_bottle",
+        "rows": 324,
+        "source": "MVTec-LOCO"
+      },
+      {
+        "category": "pushpins",
+        "rows": 250,
+        "source": "MVTec-LOCO"
+      },
+      {
+        "category": "screw_bag",
+        "rows": 323,
+        "source": "MVTec-LOCO"
+      },
+      {
+        "category": "splicing_connectors",
+        "rows": 259,
+        "source": "MVTec-LOCO"
+      },
+      {
+        "category": "candle",
+        "rows": 126,
+        "source": "VisA"
+      },
+      {
+        "category": "capsules",
+        "rows": 89,
+        "source": "VisA"
+      },
+      {
+        "category": "cashew",
+        "rows": 111,
+        "source": "VisA"
+      },
+      {
+        "category": "chewinggum",
+        "rows": 95,
+        "source": "VisA"
+      },
+      {
+        "category": "fryum",
+        "rows": 105,
+        "source": "VisA"
+      },
+      {
+        "category": "macaroni1",
+        "rows": 131,
+        "source": "VisA"
+      },
+      {
+        "category": "macaroni2",
+        "rows": 140,
+        "source": "VisA"
+      },
+      {
+        "category": "pcb1",
+        "rows": 124,
+        "source": "VisA"
+      },
+      {
+        "category": "pcb2",
+        "rows": 118,
+        "source": "VisA"
+      },
+      {
+        "category": "pcb3",
+        "rows": 122,
+        "source": "VisA"
+      },
+      {
+        "category": "pcb4",
+        "rows": 150,
+        "source": "VisA"
+      },
+      {
+        "category": "pipe_fryum",
+        "rows": 89,
+        "source": "VisA"
+      }
+    ],
+    "unique_sample_ids": 5600
+  },
+  "train_validation_unique_assets": 8070,
+  "validation": {
+    "assets": {
+      "unique_query_images": 380,
+      "unique_query_or_reference_images": 725,
+      "unique_reference_images": 345
+    },
+    "duplicate_sample_id_rows": 0,
+    "label": [
+      {
+        "label": "anomaly",
+        "rows": 372,
+        "share": 0.6642857142857143
+      },
+      {
+        "label": "normal",
+        "rows": 188,
+        "share": 0.3357142857142857
+      }
+    ],
+    "question_type": [
+      {
+        "question_type": "Anomaly Detection",
+        "rows": 80,
+        "share": 0.14285714285714285
+      },
+      {
+        "question_type": "Defect Analysis",
+        "rows": 80,
+        "share": 0.14285714285714285
+      },
+      {
+        "question_type": "Defect Classification",
+        "rows": 80,
+        "share": 0.14285714285714285
+      },
+      {
+        "question_type": "Defect Description",
+        "rows": 80,
+        "share": 0.14285714285714285
+      },
+      {
+        "question_type": "Defect Localization",
+        "rows": 80,
+        "share": 0.14285714285714285
+      },
+      {
+        "question_type": "Object Analysis",
+        "rows": 80,
+        "share": 0.14285714285714285
+      },
+      {
+        "question_type": "Object Classification",
+        "rows": 80,
+        "share": 0.14285714285714285
+      }
+    ],
+    "rows": 560,
+    "source": [
+      {
+        "rows": 140,
+        "share": 0.25,
+        "source": "GoodsAD"
+      },
+      {
+        "rows": 140,
+        "share": 0.25,
+        "source": "MVTec-AD"
+      },
+      {
+        "rows": 140,
+        "share": 0.25,
+        "source": "MVTec-LOCO"
+      },
+      {
+        "rows": 140,
+        "share": 0.25,
+        "source": "VisA"
+      }
+    ],
+    "source_category": [
+      {
+        "category": "cigarette_box",
+        "rows": 8,
+        "source": "GoodsAD"
+      },
+      {
+        "category": "drink_bottle",
+        "rows": 47,
+        "source": "GoodsAD"
+      },
+      {
+        "category": "drink_can",
+        "rows": 2,
+        "source": "GoodsAD"
+      },
+      {
+        "category": "food_bottle",
+        "rows": 37,
+        "source": "GoodsAD"
+      },
+      {
+        "category": "food_box",
+        "rows": 15,
+        "source": "GoodsAD"
+      },
+      {
+        "category": "food_package",
+        "rows": 31,
+        "source": "GoodsAD"
+      },
+      {
+        "category": "bottle",
+        "rows": 2,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "cable",
+        "rows": 7,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "capsule",
+        "rows": 7,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "carpet",
+        "rows": 7,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "grid",
+        "rows": 11,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "hazelnut",
+        "rows": 6,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "leather",
+        "rows": 7,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "metal_nut",
+        "rows": 13,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "pill",
+        "rows": 11,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "screw",
+        "rows": 26,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "tile",
+        "rows": 14,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "transistor",
+        "rows": 10,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "wood",
+        "rows": 6,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "zipper",
+        "rows": 13,
+        "source": "MVTec-AD"
+      },
+      {
+        "category": "breakfast_box",
+        "rows": 21,
+        "source": "MVTec-LOCO"
+      },
+      {
+        "category": "juice_bottle",
+        "rows": 21,
+        "source": "MVTec-LOCO"
+      },
+      {
+        "category": "pushpins",
+        "rows": 41,
+        "source": "MVTec-LOCO"
+      },
+      {
+        "category": "screw_bag",
+        "rows": 19,
+        "source": "MVTec-LOCO"
+      },
+      {
+        "category": "splicing_connectors",
+        "rows": 38,
+        "source": "MVTec-LOCO"
+      },
+      {
+        "category": "candle",
+        "rows": 6,
+        "source": "VisA"
+      },
+      {
+        "category": "capsules",
+        "rows": 9,
+        "source": "VisA"
+      },
+      {
+        "category": "cashew",
+        "rows": 9,
+        "source": "VisA"
+      },
+      {
+        "category": "chewinggum",
+        "rows": 11,
+        "source": "VisA"
+      },
+      {
+        "category": "fryum",
+        "rows": 5,
+        "source": "VisA"
+      },
+      {
+        "category": "macaroni1",
+        "rows": 15,
+        "source": "VisA"
+      },
+      {
+        "category": "macaroni2",
+        "rows": 16,
+        "source": "VisA"
+      },
+      {
+        "category": "pcb1",
+        "rows": 23,
+        "source": "VisA"
+      },
+      {
+        "category": "pcb2",
+        "rows": 8,
+        "source": "VisA"
+      },
+      {
+        "category": "pcb3",
+        "rows": 14,
+        "source": "VisA"
+      },
+      {
+        "category": "pcb4",
+        "rows": 11,
+        "source": "VisA"
+      },
+      {
+        "category": "pipe_fryum",
+        "rows": 13,
+        "source": "VisA"
+      }
+    ],
+    "unique_sample_ids": 560
+  }
+}
